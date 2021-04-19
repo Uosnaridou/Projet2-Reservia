@@ -30,6 +30,10 @@ header a:hover
     color: #0065FC;
     font-weight: bold;
 }
+#inscription:hover
+{
+    border-color: white;
+}
 .flottant
 {
     width: 9%;
