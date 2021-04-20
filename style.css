@@ -178,3 +178,53 @@ i.fas.fa-info
 {
     display: flex;
 }
+#Hebergeur
+{
+    background-color: #F2F2F2;
+    width: 75%;
+    height: 24em;
+    border-radius: 23px;
+}
+.articles_hebergeur
+{
+    background-color: #FFFFFF;
+    width: 219px;
+    height: 171px;
+    border-radius: 23px;
+}
+.img_hebergeur
+{
+    width: 211px;
+    height: 100px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    margin-top: 5px;
+    margin-left: 4px;
+}
+h3
+{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+#Hebergeur p
+{
+    font-size: 11px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+i.fas.fa-star
+{
+    color: #0065FC;
+    font-size: 12px;
+}
+#gris
+{
+    color: #F2F2F2;
+}
+#marge_star
+{
+    margin-left: 15px;
+}
