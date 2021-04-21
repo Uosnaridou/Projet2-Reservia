@@ -181,8 +181,8 @@ i.fas.fa-info
 #Hebergeur
 {
     background-color: #F2F2F2;
-    width: 75%;
-    height: 24em;
+    width: 64%;
+    height: 31em;
     border-radius: 23px;
 }
 .articles_hebergeur
@@ -217,14 +217,54 @@ h3
 }
 i.fas.fa-star
 {
-    color: #0065FC;
     font-size: 12px;
 }
-#gris
+.bleu
+{
+    color: #0065FC;
+}
+.gris
 {
     color: #F2F2F2;
 }
-#marge_star
+.marge_star
 {
     margin-left: 15px;
+}
+#articles
+{
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    grid-template-rows: 51%;
+    height: 24em;
+    justify-content: center;
+    align-items: center;
+}
+#articles+p
+{
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 4%;
+}
+#miseEnPage_Grid
+{
+    display: grid;
+    grid-template-columns: 30% 31% 31%;
+    grid-template-rows: 13% 34% 37% 8%;
+    justify-content: center;
+    align-items: center;
+    height: 34em;
+}
+#cannebiere, #port, #mouettes
+{
+    grid-row-start: 2;
+}
+#mer, #panier, #amina
+{
+    grid-row-start: 3;
+}
+#amina+p 
+{
+    grid-row-start: 4;
+    font-weight: bold;
 }
