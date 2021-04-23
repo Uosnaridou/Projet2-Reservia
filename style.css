@@ -249,6 +249,7 @@ i.fas.fa-star
     font-size: 13px;
     margin-left: 4%;
 }
+
 #miseEnPage_Grid
 {
     display: grid;
@@ -275,8 +276,12 @@ i.fas.fa-star
 {
     background-color: #F2F2F2;
     height: 31em;
-    width: 100%;
+    width: 78%;
     border-radius: 23px;
+    grid-column: 3;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 .articles_populaires
 {
@@ -288,7 +293,7 @@ i.fas.fa-star
 .img_populaire
 {
     width: 103px;
-    height: 105px;
+    height: 107px;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
     margin-top: 5px;
@@ -299,16 +304,25 @@ i.fas.fa-star
 {
     font-size: 11px;
     margin-top: 0;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    margin-left: 47%;
+    margin-bottom: 24px;
 }
 #Populaire h3
 {
-    font-size: 11px;
-    margin-left: 113px;
+    font-size: 13px;
+    margin-left: 47%;
+    margin-bottom: 8px;
 }
 #section
 {
     display: grid;
-    grid-template-columns: 63% 35%;
+    grid-template-columns: 63% 4% 35%;
+}
+.marge
+{
+    margin-left: 6%;
+}
+.marge_logoFleche
+{
+    margin-left: 25%;
 }
