@@ -326,3 +326,63 @@ i.fas.fa-star
 {
     margin-left: 25%;
 }
+#img_vieuxPort
+{
+    height: 332px;
+    width: 254px;
+}
+#img_pomegues
+{
+    height: 135px;
+    width: 254px;
+}
+#img_frioul
+{
+    height: 63px;
+    width: 254px;
+}
+#img_calanques
+{
+    height: 332px;
+    width: 254px;
+}
+#img_notreDame
+{
+    height: 103px;
+    width: 254px;
+}
+#img_longchamp
+{
+    height: 144px;
+    width: 254px;
+}
+#vieuxPort,#pomegues, #frioul, #calanques, #dame, #longchamp
+{
+    box-shadow: 5px 5px 5px 1px grey;
+    width: 254px;
+}
+/*
+#vieuxPort
+{
+
+}
+#pomegues
+{
+
+}
+#frioul
+{
+
+}
+#calanques
+{
+
+}
+#dame
+{
+
+}
+#longchamp
+{
+
+}*/
