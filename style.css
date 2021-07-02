@@ -1,15 +1,22 @@
 body
 {
     font-family: 'Raleway', sans-serif;
-    margin-left: 3%;
-    margin-top: -1px;
+    width: 100%;
+    margin: 0;
+
 }
-header 
+.header
 {
     height: 115px;
     display: flex;
+    margin-left : 10px;
 }
-header a
+#header_grand_ecran{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_grand_ecran a
 {
     text-decoration: none;
     color : black;
@@ -17,17 +24,23 @@ header a
     height: 113px;
     display: flex;
     align-items: center;
-    border-top: #ffffFF solid 1px;
+    border-top: #ffffFF solid 2px;
 }
-header a:hover
+#header_grand_ecran a:hover
 {
     color: #0065FC;
-    border-top: #0065FC solid 1px;
+    border-color: #0065FC;
 
+}
+#header_responsive{
+    display: none;
+}
+section{
+    margin-left: 10px;
 }
 #inscription 
 {
-    color: #0065FC;
+    color: #0065FC !important;
     font-weight: bold;
 }
 #inscription:hover
@@ -37,6 +50,7 @@ header a:hover
 .flottant
 {
     width: 9%;
+    margin-left: 14px;
 }
 #menu
 {
@@ -79,7 +93,7 @@ i.fas.fa-map-marker-alt
     justify-content: center;
     height: 50px;
 }
-#btn_rechercher
+.btn_rechercher
 {
     background-color: #0065FC;
     color: white;
@@ -91,6 +105,9 @@ i.fas.fa-map-marker-alt
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     font-weight: bold;
+}
+.icone{
+    display: none;
 }
 input#saisie_lieu 
 {
@@ -154,7 +171,9 @@ input#saisie_lieu
 }
 h2
 {
-    font-size: 18px;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 23px;
 }
 i.fas.fa-info 
 {
@@ -178,13 +197,7 @@ i.fas.fa-info
 {
     display: flex;
 }
-#Hebergeur
-{
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 31em;
-    border-radius: 23px;
-}
+
 
 .articles_hebergeur
 {
@@ -250,45 +263,18 @@ i.fas.fa-star
     margin-left: 4%;
 }
 
-#miseEnPage_Grid
-{
-    display: grid;
-    grid-template-columns: 30% 31% 31%;
-    grid-template-rows: 13% 34% 37% 8%;
-    justify-content: center;
-    align-items: center;
-    height: 34em;
-}
-#cannebiere, #port, #mouettes
-{
-    grid-row-start: 2;
-}
-#mer, #panier, #amina
-{
-    grid-row-start: 3;
-}
 #amina+p 
 {
-    grid-row-start: 4;
     font-weight: bold;
 }
-#Populaire
-{
-    background-color: #F2F2F2;
-    height: 31em;
-    width: 78%;
-    border-radius: 23px;
-    grid-column: 3;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
+
 .articles_populaires
 {
     background-color: #FFFFFF;
     width: 264px;
     height: 117px;
     border-radius: 23px;
+    margin: auto;
 }
 .img_populaire
 {
@@ -313,11 +299,33 @@ i.fas.fa-star
     margin-left: 47%;
     margin-bottom: 8px;
 }
-#section
+#section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+#Populaire
 {
-    display: grid;
-    grid-template-columns: 63% 4% 35%;
-    margin-bottom: 95px;
+    background-color: #F2F2F2;
+    height: 482px;
+    width: 27%;
+    border-radius: 23px;
+}
+#Hebergeur
+{
+    background-color: #F2F2F2;
+    width: 67%;
+    height: 482px;
+    border-radius: 23px;
+}
+.articles_hebergement{
+    display: flex;
+    justify-content: space-around;
+}
+.hebergement_marges{
+    margin-top: 22px;
+    margin-bottom: 28px;
+
 }
 .marge
 {
@@ -372,6 +380,7 @@ i.fas.fa-star
 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    margin-left: 10px;
 }
 #Activites p
 {
@@ -418,7 +427,6 @@ footer
 {
     margin-top: 50px;
     background-color: #F2F2F2;
-    width: 106%;
     height: 163px;
     margin-left: -39px;
     display: grid;
@@ -430,3 +438,175 @@ footer
 {
     margin-left: 16%;
 }
+
+
+
+body{
+    width: 100%;
+}
+html{
+    width: 100%;
+}
+
+/*RESPONSIVE
+ @media (min-width: 320px) and (max-width: 1020px)*/
+@media screen and (max-width: 1024px) {
+   
+
+    h2{
+        margin-top: 0;
+    }
+
+    #header_responsive{
+        display: block;
+        height: 130px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #partie_dessus{
+        display: flex;
+        justify-content: space-between;
+        margin: 9px;
+    }
+    #partie_dessous{
+        display: flex;
+        justify-content: space-around;
+        height: 53px;
+        align-items: center;
+    }
+    #hebergeur_responsive, #activites_responsive{
+        color: black;
+        text-decoration: none;
+        border-bottom: 3px #F2F2F2 solid;
+        text-align: center;
+        width: 50%;
+        height: 30px;
+    }
+    #hebergeur_responsive:hover, #activites_responsive:hover{
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+    #inscription_responsive{
+        color: #0065FC;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    #header_grand_ecran{
+        display: none;
+    }
+
+    .texte{
+        display: none;
+    }
+    .icone{
+        display: flex;
+    }
+    .btn_rechercher{
+        width: 47px;
+        border-radius: 14px;
+    }
+
+    #filtre {
+        display: block;
+        margin-top: 26px;
+        margin-bottom: 12px;
+    }
+
+   .filtre_responsive{
+       margin-top: 6px;
+   }
+
+
+
+   #Populaire{
+       width: 100%;
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: initial;
+   }
+
+   #Hebergeur{
+        width: 100%;
+        margin-top: 38px;
+        height: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        margin-bottom: 40px;
+   }
+
+   #Hebergeur h2{
+    align-self: flex-start;
+   }
+
+   .articles_hebergeur{
+    box-shadow: #f2f2f2 1px 1px 11px 11px;
+    margin-bottom: 10px;
+    width: 276px !important;
+    }
+
+    .activites_responsive{
+        height: 80px !important;
+    }
+
+
+    #Activites {
+        display: initial;
+    }
+
+    .articles_hebergement{
+        display: initial;
+    }
+    .img_hebergeur{
+        width: 270px !important;
+    }
+
+    #hebergement_p{
+        align-self: flex-start;
+        font-weight: bold;
+        font-size: large !important;
+    }
+
+    .img_responsive{
+        width: 276px !important;
+        height: 90px !important;
+    }
+
+    .activites_responsive{
+        width: 276px !important;
+        height: 141px !important;
+        margin-bottom: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #pomegues_frioul{
+        display: block;
+    }
+
+
+    #section{
+        display: initial;
+    }
+
+    footer{
+        height: 382px;
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: center;
+    }
+
+    .footer_marge{
+        margin-left: 16%;
+    }
+
+
+
+} 
